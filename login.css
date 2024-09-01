@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sesion {
+   
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #2a1a1e00; /* Color de fondo inicial */
+    color: #2a1a1e; /* Color del texto */
+    padding: 12px 24px; /* Espaciado interno del botón */
+    border-color: #2a1a1e;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo del formulario */
+.loginForm h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+
+}
+
+.loginForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+
+}
+
