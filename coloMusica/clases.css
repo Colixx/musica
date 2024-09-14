@@ -1,0 +1,147 @@
+.course-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.level-selector select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.premium-banner {
+    background-color: #6A00F4;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.premium-button {
+    display: inline-block;
+    background-color: white;
+    color: #6A00F4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.chapter-container {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.nivel2{
+    padding-top: 5rem;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #00A859;
+    height: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eef;
+    margin-bottom: 10px;
+}
+
+.lesson.incomplete {
+    background-color: #f9f9f9;
+}
+
+.lesson-icon {
+    position: relative;
+    margin-right: 10px;
+}
+
+.lesson-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.checkmark {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: #00A859;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.lesson-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.lesson-content p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .course-container {
+        padding: 30px;
+        margin: 10px; /* Añade más margen en dispositivos móviles */
+    }
+    
+    h1 {
+        font-size: 20px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .lesson {
+        flex-direction: column; /* Ajusta el diseño de las lecciones para pantallas más pequeñas */
+        align-items: flex-start;
+    }
+    
+    .lesson-icon {
+        margin-right: 0;
+        margin-bottom: 10px; /* Añade margen inferior en dispositivos móviles */
+    }
+
+    .lesson-icon img {
+        width: 40px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+        height: 40px;
+    }
+
+    .lesson-content h3 {
+        font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+
+    .lesson-content p {
+        font-size: 12px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+}

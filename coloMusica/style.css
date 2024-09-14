@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #181411;
+    font-family: inter;
+    overflow-x: hidden; 
+    padding-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: small;
+}
+
+
+/* Estilos para el header */
+header {
+    background-color: #c41e12;; /* Color de fondo con opacidad */
+    color: #f7f2f3;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+    position: fixed; /* Fija el header en la pantalla */
+    top: 0; /* Coloca el header en la parte superior */
+    left: 0; /* Alinea el header al borde izquierdo */
+    width: 100%; /* Asegura que el header ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegura que el header quede encima de otros elementos */
+}
+
+/* Estilos para la lista de navegación */
+.navList {
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    gap: 2rem; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    font-size: small; /* Tamaño de fuente */
+    padding: 0.5rem; /* Espaciado interno */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilo general para la sección de inicio */
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacio entre los elementos */
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #2a1a1e00; /* Color de fondo inicial */
+    color: #2a1a1e; /* Color del texto */
+    padding: 12px 24px; /* Espaciado interno del botón */
+    border-color: #c41e12;;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    
+}
+
+/* Efecto hover (cuando se pasa el cursor por encima) */
+button:hover {
+    background-color: #c41e129c; /* Color de fondo al hacer hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Efecto activo (cuando se hace clic) */
+button:active {
+    background-color: #2a1a1e; /* Color de fondo al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Disminuye la sombra */
+}
+
+/* Estilo de botón deshabilitado */
+button:disabled {
+    background-color: #cccccc; /* Color de fondo gris */
+    color: #666666; /* Color de texto gris */
+    cursor: not-allowed; /* Cursor de no permitido */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo para la cuadrícula de botones */
+.botonesCursos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsive para tablets (pantallas de menos de 768px) */
+@media (max-width: 768px) {
+    .inicio {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    .botonesCursos {
+        grid-template-columns: 1fr; /* Una columna en tablets */
+    }
+
+    button {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 12px; /* Ajusta el espaciado interno */
+    }
+}
+
+/* Responsive para móviles (pantallas de menos de 480px) */
+@media (max-width: 480px) {
+    .botonesCursos {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    button {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+        padding: 10px; /* Ajusta el espaciado interno */
+    }
+}
+

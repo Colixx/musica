@@ -1,0 +1,251 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, 'Noto Sans', sans-serif;
+}
+
+.pantalla {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    justify-content: space-between;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: #181411;
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    color: #181411;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #e6e0db;
+    border-radius: 0.75rem;
+    padding: 15px;
+    flex-direction: row-reverse;
+}
+
+.radio-input {
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 2px solid #e6e0db;
+    background-color: transparent;
+    appearance: none;
+}
+
+.radio-input:checked {
+    border-color: #181411;
+    background-color: #181411;
+    background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 16 16%22 fill=%22rgb(24,20,17)%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Ccircle cx=%278%27 cy=%278%27 r=%273%27/%3E%3C/svg%3E');
+}
+
+.radio-label {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.radio-text {
+    color: #181411;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-section {
+    display: flex;
+    padding: 1rem;
+    padding-top: 0.75rem;
+}
+
+.continue-button {
+    min-width: 84px;
+    max-width: 480px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background-color: #c41e12;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+.course-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #181411;
+}
+
+.level-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.level-selector select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.chapter-container {
+    margin-bottom: 30px;
+}
+
+.chapter-container h2 {
+    font-size: 24px;
+    color: #181411;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 4px;
+    height: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progress {
+    background: #c41e12;
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.lesson {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lesson-icon {
+    margin-right: 15px;
+}
+
+.lesson-icon img {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.lesson-content {
+    flex: 1;
+}
+
+.lesson-title {
+    font-size: 18px;
+    color: #181411;
+    margin: 0;
+}
+
+.lesson-description {
+    font-size: 14px;
+    color: #8a7360;
+    margin: 5px 0 0;
+}
+
+.lesson-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lesson.incomplete {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.nivel2 {
+    border-top: 2px solid #c41e12;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+/* Opcional: Estilo para banners premium */
+.premium-banner {
+    background: #c41e12;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.premium-button {
+    background: #fff;
+    color: #c41e12;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.premium-button:hover {
+    background: #f4f4f4;
+}

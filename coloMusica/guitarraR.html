@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="clases.css">
+        <link rel="stylesheet" href="curso.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    </head>
+
+
+
+    <body style="margin: 0; padding: 0;">
+        <!-- <header>
+            <nav class="navMenu">
+                <ul class="navList">
+                    <li class="itemNav"><a href="/index.html">Inicio</a></li>
+                    <li class="itemNav"><a href="/sesion.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </header> -->
+        
+        
+        <div id="pantalla1" class="pantalla">
+          <div class="container">
+              <div class="header-section">
+                  <div class="header-content">
+                      <div class="header-logo">
+                          <a href="index.html" class="logo-link">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                  <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                              </svg>
+                          </a>
+                      </div>
+                      <p class="header-text">Elegí tu nivel</p>
+                  </div>
+              </div>
+              <div class="options">
+                  <label class="radio-option">
+                      <input type="radio" class="radio-input" name="nivel" checked>
+                      <div class="radio-label">
+                          <p class="radio-text">Principiante</p>
+                      </div>
+                  </label>
+                  <label class="radio-option">
+                      <input type="radio" class="radio-input" name="nivel">
+                      <div class="radio-label">
+                          <p class="radio-text">Intermedio</p>
+                      </div>
+                  </label>
+                  <label class="radio-option">
+                      <input type="radio" class="radio-input" name="nivel">
+                      <div class="radio-label">
+                          <p class="radio-text">Avanzado</p>
+                      </div>
+                  </label>
+              </div>
+              <div class="footer-section">
+                  <button onclick="showScreen('pantalla2')" class="continue-button">
+                      <span>Continuar</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+   
+
+    <div id="pantalla2" class="pantalla" style="display: none;">
+      <div class="course-container">
+        <h1>Guitarra rock nacional</h1>
+        
+        <div class="level-selector">
+            <select name="level" id="level">
+                <option value="beginner">1. Primeros acordes</option>
+                <option value="beginner">2. Melodias</option>
+                <option value="beginner">3. Rasgueos</option>
+                <option value="beginner">Soy muy crack</option>
+                <!-- Otros niveles -->
+            </select>
+        </div>
+        <!-- Otros niveles 
+        <div class="premium-banner">
+            <p>FREE TRIAL</p>
+            <a href="#" class="premium-button">Try Premium for free</a>
+        </div>-->
+    
+        <div class="chapter-container">
+            <h2>Nivel 1 primeros acordes</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 20%;"></div>
+            </div>
+    
+            <div class="lesson">
+                <div class="lesson-icon">
+                    <img src="img/sui.jfif" alt="User 1">
+                    <div class="checkmark" >&#10004;</div>
+                </div>
+                <div class="lesson-content">
+                    <h3>Confesiones de invierno</h3>
+                    <p>Aprende la primer secuencia de acordes</p>
+                </div>
+            </div>
+    
+            <a href="Temas/cancionParaMiMuerte.pdf" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/soda.avif" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Musica ligera</h3>
+                        <p>Tu primer cancion con cejilla</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Temas/" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/piojos.jpg" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Bicho de ciudad</h3>
+                        <p>Preparate para el fogon</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Temas/" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/fito.avif" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Fue amor</h3>
+                        <p>La verdad todo chamuyoo</p>
+                    </div>
+                </div>
+            </a>
+    
+    
+    
+        </div>
+    
+    
+        <div class="chapter-container nivel2">
+            <h2>Nivel 2 melodias</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+    
+    
+            <a href="Temas/cancionParaMiMuerte.pdf" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/nota.jfif" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Mariposa tecnicolor</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veritatis esse eum! Facilis, excepturi fuga?</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Temas/" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/nota.jfif" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Un vestido y un amor</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, voluptates.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Temas/" class="lesson-link">
+                <div class="lesson incomplete">
+                    <div class="lesson-icon">
+                        <img src="img/nota.jfif" alt="User 2">
+                    </div>
+                    <div class="lesson-content">
+                        <h3>Yo vengo a ofrecer un canelon</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, cupiditate.</p>
+                    </div>
+                </div>
+            </a>
+    
+    
+    
+        </div>
+
+
+
+        <div class="chapter-container nivel2">
+          <h2>Nivel 3 rasgueos</h2>
+          <div class="progress-bar">
+              <div class="progress" style="width: 0%;"></div>
+          </div>
+  
+  
+          <a href="Temas/cancionParaMiMuerte.pdf" class="lesson-link">
+              <div class="lesson incomplete">
+                  <div class="lesson-icon">
+                      <img src="img/nota.jfif" alt="User 2">
+                  </div>
+                  <div class="lesson-content">
+                      <h3>Mariposa tecnicolor</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est veritatis esse eum! Facilis, excepturi fuga?</p>
+                  </div>
+              </div>
+          </a>
+          <a href="Temas/" class="lesson-link">
+              <div class="lesson incomplete">
+                  <div class="lesson-icon">
+                      <img src="img/nota.jfif" alt="User 2">
+                  </div>
+                  <div class="lesson-content">
+                      <h3>Un vestido y un amor</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, voluptates.</p>
+                  </div>
+              </div>
+          </a>
+          <a href="Temas/" class="lesson-link">
+              <div class="lesson incomplete">
+                  <div class="lesson-icon">
+                      <img src="img/nota.jfif" alt="User 2">
+                  </div>
+                  <div class="lesson-content">
+                      <h3>Yo vengo a ofrecer un canelon</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, cupiditate.</p>
+                  </div>
+              </div>
+          </a>
+  
+  
+  
+      </div>
+        <script src="index.js"></script>
+    </body>
+</html>
